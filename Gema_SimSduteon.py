@@ -65,9 +65,12 @@ class Student:
 
 student1 = Student(name="Капаносики")
 student2 = Student(name="Франусики")
+student3 = Student(name="Тритеп")
 
 for day in range(365):
     if student1.alive == True:
         student1.live(day)
     if student2.alive == True:
         student2.live(day)
+    if student3.alive == True:
+        student3.live(day)
