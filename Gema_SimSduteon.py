@@ -8,12 +8,14 @@ class Student:
         self.name = name
         self.gladness = 50
         self.progress = 0
+        self.money = 50
         self.alive = True
 
     def to_study(self):
         print("Time to study")
         self.progress += 0.12
         self.gladness -= 3
+        self.money -= 0.2
 
 
     def to_sleep(self):
@@ -35,12 +37,16 @@ class Student:
         elif self.progress > 5:
             print("Passed...")
             self.alive = False
+        elif self.money == 0:
+            print("You are a bum")
+            self.alive = False
 
 
 
     def end_of_day(self):
         print(f"Gladness = {self.gladness}")
         print(f"Progress = {self.progress}")
+        print(f"Money = {self.money}")
 
     def live(self, day):
         day = f"Day {day} of {self.name} life"
@@ -65,4 +71,3 @@ for day in range(365):
         student1.live(day)
     if student2.alive == True:
         student2.live(day)
-
