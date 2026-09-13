@@ -21,6 +21,7 @@ class Student:
     def to_sleep(self):
         print("Time to sleep")
         self.gladness += 3
+        
     def to_money(self):
         print("Time to Money")
         self.money += 3
