@@ -21,6 +21,9 @@ class Student:
     def to_sleep(self):
         print("Time to sleep")
         self.gladness += 3
+    def to_money(self):
+        print("Time to Money")
+        self.money += 3
 
     def to_chill(self):
         print("Rest time")
@@ -51,13 +54,15 @@ class Student:
     def live(self, day):
         day = f"Day {day} of {self.name} life"
         print(f"{day=:=^50}")
-        live_cube = random.randint(1,3)
+        live_cube = random.randint(1,5)
         if live_cube == 1:
             self.to_study()
         elif live_cube == 2:
             self.to_sleep()
         elif live_cube == 3:
             self.to_chill()
+        elif live_cube == 4:
+            self.to_money()
         self.end_of_day()
         self.is_alive()
 
