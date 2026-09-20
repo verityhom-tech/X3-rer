@@ -1,7 +1,4 @@
-import inspect
 #import requests
-import math
-import Gema_SimSduteon
 
 import sys
 
