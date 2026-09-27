@@ -14,6 +14,10 @@ class My_Test(unittest.TestCase):
     def test_wrong_type(self):
         self.assertEqual(adder("5", 10), 15)
 
+    def test_OP(self):
+        self.assertEqual(adder(20, 1), 21)
+
+
 
 
 
